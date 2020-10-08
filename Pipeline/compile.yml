@@ -1,4 +1,4 @@
-platform: windows    
+platform: linux   
 inputs:
   - name: code
 run:
