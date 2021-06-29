@@ -4,6 +4,7 @@ pipeline {
 	stage('BUILDING'){
           steps{
 	     echo '*******'
+	     echo 'master the blaster'
 	     sh ls
 	     sh pwd
 	     sh ll 
