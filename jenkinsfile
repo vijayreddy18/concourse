@@ -3,7 +3,7 @@ pipeline {
     stages {
 	stage('BUILDING'){
           steps{
-	     echo '*******
+	     echo '*******'
 	     sh msbuild DatDotNet.sln
 	     }
 	   }
