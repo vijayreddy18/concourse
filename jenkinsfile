@@ -1,14 +1,16 @@
 pipeline {
     agent any
     stages {
-				
-		stage('BUILDING'){
-		    steps{
-		       
-		            echo '************PR
-					sh '''
-					    msbuild DatDotNet.sln 
+	stage('BUILDING'){
+          steps{
+	     echo '*******
+	     sh msbuild DatDotNet.sln
+	     }
+	   }
+	 }
+} 
+	  
 						
-                    '''						
-		        }
-		    }
+                						
+		      
+		     
