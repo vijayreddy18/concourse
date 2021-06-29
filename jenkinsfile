@@ -4,7 +4,9 @@ pipeline {
 	stage('BUILDING'){
           steps{
 	     echo '*******'
-	     sh msbuild DatDotNet.sln
+	     sh ls
+	     sh pwd
+	     sh mkdir hello
 	     }
 	   }
 	 }
