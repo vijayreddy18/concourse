@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    stages {
+				
+		stage('BUILDING'){
+		    steps{
+		       
+		            echo '************PR
+					sh '''
+					    msbuild DatDotNet.sln 
+						
+                    '''						
+		        }
+		    }
