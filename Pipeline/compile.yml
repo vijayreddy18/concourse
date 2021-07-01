@@ -4,3 +4,4 @@ inputs:
 run:
   dir: code
   path: msbuild
+  echo: hai how are you
