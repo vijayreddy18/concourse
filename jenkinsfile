@@ -62,6 +62,20 @@ pipeline {
                 sh """
                 echo "Deploying Code"
                 """
+	   post{
+        success{
+            sh 'git config --list'
+            sh 'git config user.name '
+            sh "git remote -v"
+            sh "git remote rm origin"
+            sh "git remote add origin 'https://github.com/vijayreddy18/concourse.git'
+            sh "git config --global user.name vijaykumar18"
+            sh "git config --global user.password Rainbow@968"
+            sh "git push -u origin --force master  
+        }
+        failure{
+            echo "========pipeline execution failed========"
+        }	
             }
         }
 
