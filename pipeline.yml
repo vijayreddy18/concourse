@@ -13,3 +13,7 @@ jobs:
     - task: compile
       privileged: true
       file: code/Pipeline/compile.yml
+      helo
+fhhfkfsa
+
+s
